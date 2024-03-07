@@ -21,6 +21,7 @@
               "src/favicon.ico"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -81,6 +82,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "assets": [
@@ -90,25 +92,11 @@
           }
         }
       }
-    },
-    "angular-material-course-e2e": {
-      "root": "",
-      "sourceRoot": "",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "angular-material-course:serve"
-          }
-        }
-      }
     }
   },
   "schematics": {
     "@schematics/angular:component": {
-      "style": "scss"
+      "style": "css"
     },
     "@schematics/angular:directive": {
       "prefix": ""
